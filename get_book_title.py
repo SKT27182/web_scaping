@@ -12,7 +12,8 @@ for page_num in range(1,51):             #itterating through all pages
     soup = bs4.BeautifulSoup(request.text,'lxml')
 
     books = soup.select('.product_pod')        #finding the product_pod class
-
+    print(books[1])
+    exit(11)
     for book in books:
         if [] != book.select('.star-rating.Two'):    #if a class name conatain a whitespace then cover it by dot(.)
 
