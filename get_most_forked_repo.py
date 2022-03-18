@@ -13,10 +13,7 @@ base_url = "https://github.com/search?o=desc&p={}&q=org%3A{}&s=forks&type=Reposi
 count = 1
 for page in range(1,page_no+2):
 
-		if comp == 'google':
-			i = 3
-		else:
-			i =2
+		i =2
 		request = requests.get(base_url.format(page,comp))
 		soup = bs4.BeautifulSoup(request.text,'lxml')
 
