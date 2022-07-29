@@ -5,7 +5,7 @@ import bs4
 import sys
 
 no_of_results = sys.argv[1]
-comp = sys.argv[2]
+comp = sys.argv[2]   #enter the name of person/company
 no_of_results = int(no_of_results)
 page_no =no_of_results//10
 #base_url = "https://github.com/search?o=desc&p={}&q=google&s=forks&type=Repositories"
